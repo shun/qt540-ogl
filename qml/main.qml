@@ -1,5 +1,6 @@
 import QtQuick 2.3
 import QtQuick.Controls 1.2
+import KSElements 1.0
 
 ApplicationWindow {
     visible: true
@@ -20,9 +21,7 @@ ApplicationWindow {
             }
         }
     }
-
-    Text {
-        text: qsTr("OpenGL on Qt Quick")
-        anchors.centerIn: parent
+    OpenGLElement {
+        id:ogl
     }
 }
